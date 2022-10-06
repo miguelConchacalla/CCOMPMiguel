@@ -20,7 +20,7 @@ int main () {
     }
     */
 
-
+   
    int arr[4];
    cout << "Por favor ingrese 4 valores enteros:"<< endl;
 

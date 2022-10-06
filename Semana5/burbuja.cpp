@@ -26,8 +26,27 @@ void imprimir(int arreglo[], int tam) {
     cout <<"]";
 }
 
+void iSort(int array[], int n) {
+    int key, j;
+    for (int i = 1; i < n; i++) {
+        key = array[i];
+        j = i - 1;
+        while (j >= 0 && array[j] > key) {
+            array[j + i] = array[j];
+            j = j - 1;
+        }
+        array[j + 1] = key;
+    }
+}
+
 int main()
 {
+    int arreglo1[] = {5, 7, 10, 3, 9};
+    int tam = sizeof(arreglo1) / sizeof(arreglo1[0]);
+    imprimir(arreglo1, tam);
+    iSort(arreglo1, tam);
+    imprimir(arreglo1, tam);
+
     int arr[] = {21, 65, 58, 15};
     burbuja(arr, 4);
     imprimir(arr, 4);
