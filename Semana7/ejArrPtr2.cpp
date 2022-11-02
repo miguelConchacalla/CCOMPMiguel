@@ -33,8 +33,8 @@ int main() {
     arreglo[3] = p4;
     arreglo[4] = p5;
 
-    impArrRec(arreglo, 5);
-    //impArr(arreglo, 5);
+    //impArrRec(arreglo, 5);
+    impArr(arreglo, 5);
     delete[] arreglo;
 
     return 0;

@@ -12,9 +12,10 @@ int main() {
 
     a.print();
 
-    if(true) {
-        IntArray b = a;
-    }
- 
+    //if(true) {
+    //  IntArray b = a;
+    //}
+    
+    
     return 0;
 }

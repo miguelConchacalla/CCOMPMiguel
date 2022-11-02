@@ -34,9 +34,10 @@ int IntArray::getSize() const
 
 void IntArray::print() const
 {
+    std::cout << "[ ";
     for (int i = 0; i < size; i++)
         std::cout << data[i] << " ";
-    std::cout << std::endl;
+    std::cout << "]" << std::endl;
 }
 
 IntArray::~IntArray()

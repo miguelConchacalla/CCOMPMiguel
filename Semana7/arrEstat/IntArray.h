@@ -4,6 +4,7 @@
 /**
  * Arreglo de enteros estático representado en una clase
  */
+
 class IntArray
 {
     int size;
