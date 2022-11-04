@@ -40,8 +40,8 @@ void DynamicPointArray::print() const
     {
         std::cout << data[i].print() << " ";
     }
-    std::cout << "]" << endl;
-}
+    std::cout << "]" << std::endl;
+}x
 
 void DynamicPointArray::push_back(Point elem)
 {
