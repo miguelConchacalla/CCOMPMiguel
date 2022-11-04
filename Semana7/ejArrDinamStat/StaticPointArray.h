@@ -1,6 +1,8 @@
 #ifndef __STATICPOINTARRAY_H__
 #define __STATICPOINTARRAY_H__
 #include "Point.h"
+#include <iostream>
+#include <string>
 
 class StaticPointArray
 {
@@ -8,13 +10,14 @@ class StaticPointArray
     Point *data;
 
 public:
-    StaticPointArray(int size);
-    StaticPointArray(const StaticPointArray &o);
-
-    void setAt(int index, Point value);
-    Point getAt(int index) const;
+    StaticPointArray(int);
+    StaticPointArray(const StaticPointArray&);
+    void setAt(int , Point);
+    Point getAt(int) const;
     int getSize() const;
     void print() const;
+
+    //std::ostream& operator << (std::ostream&, const StaticPointArray&);
 
     ~StaticPointArray();
 };

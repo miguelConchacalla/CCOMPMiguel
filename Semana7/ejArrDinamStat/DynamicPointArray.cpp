@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "DynamicPointArray.h"
 #include "Point.h"
 
@@ -28,20 +29,15 @@ DynamicPointArray::DynamicPointArray(const DynamicPointArray &o) {
         data[i] = o.data[i];
 }
 
-int DynamicPointArray::getSize() const
-{
-    return size;
-}
-
 void DynamicPointArray::print() const
 {
     std::cout << "[ ";
     for(int i = 0; i < size; i++)
     {
-        std::cout << data[i].print() << " ";
+        data[i].print();
     }
-    std::cout << "]" << std::endl;
-}x
+    std::cout << " ]" << std::endl;
+}
 
 void DynamicPointArray::push_back(Point elem)
 {
@@ -97,6 +93,11 @@ void DynamicPointArray::remove(int pos) {
     
     data = tmp;
 } 
+
+//std::ostream& operator << (std::ostream& output, const DynamicPointArray& n) {
+ //   output << "Size: " << n.getSize() << "Data: "n.print() << std::endl;
+   // return output;
+//}
 
 DynamicPointArray::~DynamicPointArray() {
     delete[] data;

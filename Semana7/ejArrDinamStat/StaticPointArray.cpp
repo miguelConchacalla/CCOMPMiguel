@@ -19,11 +19,11 @@ StaticPointArray::StaticPointArray(const StaticPointArray &o)
     }
 }
 
-void StaticPointArray::setAt(int index, Point value)
+void StaticPointArray::setAt(int index, Point pt)
 {
     if (index >= 0 && index < size)
     {
-        data[index] = value;
+        data[index] = pt;
     }
 }
 
@@ -42,12 +42,12 @@ int StaticPointArray::getSize() const
 
 void StaticPointArray::print() const
 {
-    std::cout << "[";
+    std::cout << "[ ";
     for (int i = 0; i < size; i++)
     {
-        std::cout << data[i].print() << " ";
+        data[i].print();
     }
-    std::cout << "]" << std::endl;
+    std::cout << " ]" << std::endl;
 }
 
 StaticPointArray::~StaticPointArray()

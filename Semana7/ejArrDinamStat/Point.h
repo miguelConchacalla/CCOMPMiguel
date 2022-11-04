@@ -32,7 +32,7 @@ public:
 
     void print() const
     {
-        std::cout << "(" << x << ", " << y << ")" << std::endl;
+        std::cout << "(" << x << ", " << y << ") ";
     }
 
 private:
