@@ -9,7 +9,7 @@ int main()
     ofstream destino("dest-file.txt");
     /*
     char x;
-    while(source.get(x)) 
+    while(source.get(x))
         destino << x;
     if (source.eof()) {
         cout << "[Eof reached]\n";
