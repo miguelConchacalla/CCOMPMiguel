@@ -4,12 +4,13 @@ using namespace std;
 
 int main () {
 
-    int arreglo [4] = {21,65,98,15};
+    int arreglo [5];
 
-    /*arreglo[0] =10;
+    arreglo[0] =10;
     arreglo[1] =5;
     arreglo[2] =4;
-    arreglo[3] =8;*/
+    arreglo[3] =8;
+    arreglo[4] = 6;
 
 
     /*
