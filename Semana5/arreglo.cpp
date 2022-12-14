@@ -4,7 +4,7 @@ using namespace std;
 
 int main () {
 
-    int arreglo [4] = { 21,65,98,15};
+    int arreglo [4] = {21,65,98,15};
 
     /*arreglo[0] =10;
     arreglo[1] =5;
